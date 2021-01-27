@@ -1,0 +1,167 @@
+
+
+article
+{
+    height: 100vh;
+    margin-top:5vh;
+}
+
+section
+{
+    /*background-color: #9661ba;*/
+    background-color: #6197ba;
+    width: 34%;
+    height: 57vh;
+    margin: 0 auto;
+    padding: 2% 1%;
+    position: relative;
+}
+
+#section-imagen
+{
+    padding: 2% 6%;
+    border-radius: 2% 2% 0 0;
+}
+
+#fondo
+{
+    position: absolute;
+    z-index: -1;
+    opacity: 0.1;
+    transform: rotate(120deg);
+    left: -19%;
+}
+
+#fondo img
+{
+    height: 80vh;
+}
+
+#foto-perfil
+{
+    background-color: lightgrey;
+    border-radius: 100%;
+    height: 46vh;
+    position: relative;
+}
+
+#foto-img
+{
+    position: absolute;
+    left: 10%;
+    top: 9vh;
+}
+
+#section-datos {
+    padding: 2% 5%;
+    height: 90vh;
+}
+
+label
+{
+    display: block;
+    color: #243744;
+    font-weight: 800;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+input
+{
+    display:block;
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.4s ease-in-out;
+}
+
+.writable
+{
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    color: black;
+}
+
+input:read-only { 
+    border:none;
+    background-color: transparent;
+    color:white;
+    transition: all 0.4s ease-in-out;
+  }
+
+#submit-butt
+{
+    display: none;
+    opacity: 0;
+    border: none;
+    font-family: 'Montserrat',cursive;
+    padding: 1% 2%;
+    position: absolute;
+    left: 23%;
+    bottom: 23vh;
+    border-radius: 16px;
+    transition: all 0.4s ease-in-out;
+}
+
+#submit-butt:hover
+{
+    cursor: pointer;
+    background-color: rgb(0, 190, 63);
+    color: white;
+}
+
+#edit-butt
+{
+    position: absolute;
+    right: 5%;
+    top: 0vh;
+    color: white;
+    font-size: 1.3em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#edit-butt:hover
+{
+    color: #cecece;
+    cursor: pointer;
+}
+
+#elim-cuenta
+{
+    color: white;
+    background-color: #df1d42;
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    border-radius: 9px;
+    padding: 10px 23%;
+    font-size: 1.5em;
+    bottom: 5vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#elim-cuenta:hover
+{
+    background-color: #eb6780;
+    cursor: pointer;
+}
+
+#cerrar-sesion
+{
+    color: white;
+    background-color: #df1d42;
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    border-radius: 9px;
+    padding: 10px 23%;
+    font-size: 1.5em;
+    bottom: 5vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#cerrar-sesion:hover
+{
+    background-color: #eb6780;
+    cursor: pointer;
+}
+

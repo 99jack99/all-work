@@ -1,0 +1,399 @@
+html{
+  /* background-color: black; */
+}
+#navegador
+{
+  background-color: #1eafed;
+  height: 10vh;
+  padding-top: 5px;
+  position: sticky;
+  top: 0vh;
+  z-index: 20;
+}
+
+nav ul li
+{
+  padding-left: 1%;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Baloo Bhai', cursive;
+  font-size: 2.5em;
+  display:inline;
+  margin-right: 15px;
+  color:#eef2f5;
+  float: right; 
+}
+
+#boton-usuario
+{
+    color: white;
+}
+
+#boton-usuario:visited
+{
+    color: white;
+}
+
+#boton-notif
+{
+    color: white;
+}
+
+#boton-notif:visited
+{
+    color: white;
+}
+
+#username {
+  color: white;
+  font-size: 1em;
+  font-family: 'Baloo Bhai', cursive;
+  width: auto;
+  float: left;
+}
+
+.fa-user
+{
+  margin-left: 10px;
+}
+
+#imgLogo
+{
+  width: 99%;
+    height: 8vh;
+    position: relative;
+    left: 40%;
+    top: 5vh;
+}
+
+#rightNav
+{
+  position: absolute;
+  top:1vh;
+  right: 0;
+  width: 20%;
+}
+
+#rightNav-borde {
+  position: absolute;
+  top: 1vh;
+  right: 0%;
+  width: 30%;
+}
+
+nav ul li:hover
+{
+  color:white;
+  cursor:pointer;
+}
+
+#imgNav
+{
+  position: absolute;
+  bottom: 1.5vh;
+  width: 5%;
+  left: -1%;
+  height: 12.5vh;
+}
+
+#buscador
+{
+  position: absolute;
+  left: 44%;
+  top: 3vh;
+  width: 30%;
+}
+
+#buscador-inner
+{
+  color: #1eafed;
+  background-color: white;
+  border-radius: 20px;
+  padding: 0 12px;
+  font-size: 1.5em;
+  font-weight: 700;
+  font-family: 'Baloo Bhai', cursive;
+  transition: all 0.2s ease-in-out;
+}
+
+#buscador-inner:hover
+{
+  background-color: rgba(206,206,206,0.5);
+  cursor: pointer;
+  color: white;
+}
+
+#imgNav:hover
+{
+  cursor: pointer;
+}
+
+#imgLogo:hover
+{
+ outline: 1px white;
+}
+
+#login-container
+{
+  opacity: 0;
+  display: none;
+  width: 26%;
+  height: 35vh;
+  background-color: rgba(238, 242, 245,0.8);
+  border-radius: 20px;
+  position: fixed;
+  right: 4%;
+  top: 12vh;
+  box-shadow: 9px 4px 15px rgba(0,0,0,0.2);
+  border: solid #1eafed 2px;
+  padding: 2% 4%;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+  z-index: 10;
+}
+
+#signup-container
+{
+    opacity: 0;
+    display: none;
+    width: 33%;
+    height: 66vh;
+    background-color: #eef2f5;
+    border-radius: 20px;
+    position: fixed;
+    left: 33%;
+    top: 15vh;
+    box-shadow: 9px 4px 15px rgba(0,0,0,0.2);
+    border: solid #1eafed 2px;
+    transition: all 0.4s ease-in-out;
+    z-index: 100;
+    padding: 10% 7%;
+    overflow: hidden;
+}
+
+#modal-signup
+{
+    opacity: 0;
+    display: none;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 50;
+    position: fixed;
+    top: 0;
+}
+
+.login-input
+{
+    border-radius: 10px;
+    border: solid #1eafed;
+    font-size: 1.5vw;
+    margin-bottom: 2vh;
+    padding-left: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.login-input:focus
+{
+    outline: none;
+}
+
+#login-submit
+{
+  border: none;
+  font-size: 1.9vw;
+  padding: 5px 15px;
+  border-radius: 30px;
+  background-color: #6197ba;
+  color: white;
+  font-weight: 700;
+  position: absolute;
+  left: 35%;
+  bottom: 1vh;
+}
+
+#login-submit:hover
+{
+    background-color: #1eafed;
+    cursor: pointer;
+}
+
+#pass-forget
+{
+  color: #6197ba;
+  position: absolute;
+  left: 30%;
+  bottom: 9vh;
+}
+
+#pass-forget:hover
+{
+    color: #41c08b;
+}
+
+#signup-titulo
+{
+  font-family: 'Baloo Bhai', cursive;
+  font-size: 3em;
+  position: absolute;
+  top: 6vh;
+  left: 33%;
+}
+
+.signup-input
+{
+  border-radius: 10px;
+  border: solid #1eafed;
+  font-size: 1.5vw;
+  margin-bottom: 2vh;
+  padding-left: 5px;
+  z-index: 1;
+  position: relative;
+}
+
+.signup-input:focus
+{
+    outline: none;
+}
+
+#signup-submit
+{
+    border: none;
+    font-size: 1.9vw;
+    padding: 5px 15px;
+    border-radius: 30px;
+    background-color: #6197ba;
+    color: white;
+    font-weight: 700;
+    position: absolute;
+    left: 29%;
+    bottom: 9vh;
+}
+
+#signup-submit:hover
+{
+    background-color: #1eafed;
+    cursor: pointer;
+}
+
+#login-fondopatas
+{
+  opacity: 0.1;
+  width: 80%;
+  position: absolute;
+  z-index: 0;
+  right: -26%;
+  bottom: -12%;
+  transform: rotate(172deg);
+}
+
+#signup-fondopatas
+{
+  opacity: 0.1;
+  width: 80%;
+  position: absolute;
+  z-index: 0;
+  left: -11%;
+  top: -7%;
+}
+
+#cerrar-login
+{
+  position: absolute;
+  top: 1%;
+  right: 2%;
+  font-size: 2em;
+}
+
+#cerrar-login:hover
+{
+  color: #6197ba;
+  cursor: pointer;
+}
+
+
+
+/*  RADIO BUTTONS CUSTOM   */
+
+.radiocustom {
+  display: inline;
+  left: 15%;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radiocustom input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #aaa;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radiocustom:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radiocustom input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radiocustom input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radiocustom .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+
+
+/*PANTALLAS S/M */
+@media(max-width:1800px)
+{
+  #imgLogo 
+  {
+    top: 4.5vh;
+  }
+}
+
+/* PANTALLAS */
+
+@media(max-width:1366px)
+{
+
+}

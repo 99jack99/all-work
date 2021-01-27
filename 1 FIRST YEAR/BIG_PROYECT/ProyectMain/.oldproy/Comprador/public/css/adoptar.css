@@ -1,0 +1,29 @@
+article{
+    text-align: center;
+}
+
+.chiq{
+    background-color: aquamarine;
+    height: 400px;
+    width: 400px;
+    margin-left: 140px;
+    float: left;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-top: 40px;
+}
+
+img{
+    height: 250px;
+    width: 300px;
+    border-radius: 20px; 
+}
+
+strong{
+margin: 10px;
+}
+
+span{
+
+margin: 10px;
+}

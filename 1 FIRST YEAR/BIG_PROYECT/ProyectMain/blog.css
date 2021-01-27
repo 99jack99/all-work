@@ -1,0 +1,255 @@
+body::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 7px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+    width: 7px;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+    background-color: rgba(97, 151, 186,1);;
+}
+
+body
+{
+    overflow-x: hidden;
+}
+
+figure
+{
+    display: inline;
+}
+
+#pagina-titulo
+{
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 3.5vw;
+    position: relative;
+    top: 0;
+}
+
+#img-titulo
+{
+    width: 5%;
+    position: relative;
+    top: 1vh;
+}
+
+#carrousel
+{
+    position: relative;
+    height: 89vh;
+    overflow: hidden;
+    padding-left: 20%;
+}
+
+#carrousel-texto
+{
+    position: absolute;
+    width: 59%;
+    top: 10px;
+    height: 15vh;
+    z-index: 1;
+    color: white;
+    background-color: lightblue;
+    left: 0;
+    border-radius: 0 10px 10px 0;
+}
+
+.carrousel-fig
+{
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    top: 24vh;
+    left: 30%;
+}
+
+.carrousel-img
+{
+    height: 64vh;
+    border-radius: 10px;
+}
+
+#inner-carrousel
+{
+    width: auto;
+}
+
+#carrousel-titulo
+{
+    padding: 0px 11px;
+    position: absolute;
+    z-index: 3;
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 1.8em;
+    left: 16%;
+    top: 1%;
+}
+
+
+#carrousel-titulo-bajo
+{
+    padding: 0px 11px;
+    position: absolute;
+    z-index: 3;
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 1.8em;
+    top: 5vh;
+    left: 21%;
+}
+
+#carrousel-desc
+{
+    background-color: transparent;
+    position: absolute;
+    z-index: 3;
+    top: 22vh;
+    right: 48%;
+    font-size: 1.3em;
+    width: 35%;
+    color: #0064a7;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.titulo
+{
+    font-family: 'Baloo Bhai', cursive;
+    width: 100%;
+    font-size: 2.3em;
+    position: absolute;
+    left: 43%;
+}
+
+#inicio-boton
+{
+    position: absolute;
+    z-index: 100000;
+    background-color: rgba(97, 151, 186,0.9);
+    padding: 30px;
+    border-radius: 0 65px;
+    left: 10%;
+    top: 59.4vh;
+    font-family: 'Baloo Bhai',cursive;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+a h1#inicio-boton:visited
+{
+    color:white;
+}
+
+
+#inicio-boton:hover
+{
+    background-color: rgba(97, 151, 186,1);
+}
+
+#titulo-comment
+{
+    bottom: -15vh;
+}
+
+.comentario
+{
+    height: 20vh;
+    width: 20%;
+    float: left;
+    position: relative;
+    padding: 5px;
+    margin-left: 11%;
+}  
+
+.cuerpo-comentario
+{
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 40px;
+}
+
+.user-comentario
+{
+    font-family: 'Baloo Bhai', cursive;
+}
+
+.user-firma
+{
+    font-family: 'Baloo Bhai', cursive;
+    position: absolute;
+    left: 50%;
+}
+
+#comentarios
+{
+    height: 50vh;
+    margin-top: 10vh;
+    padding-top: 14vh;
+}
+
+
+.empleado
+{
+    width: 25%;
+    float: left;
+    height: 52vh;
+    margin-top: 10vh;
+    position: relative;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.empleado > p
+{
+    opacity: 0;
+    position: absolute;
+    bottom: 16vh;
+    left: 18%;
+    width: 62%;
+    text-align: center;
+    font-size: 1.1em;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    z-index: 10;
+}
+
+.empleado > figure
+{
+    filter: grayscale(1);
+    position: absolute;
+    top: 13vh;
+    left: 14%;
+}
+
+.empleado:hover > figure
+{
+    filter: grayscale(0);
+}
+
+.empleado:hover > .modal-empleado
+{
+    opacity: 1;
+}
+
+.empleado:hover > p
+{
+    opacity: 1;
+}
+
+.modal-empleado
+{
+    opacity: 0;
+    position: absolute;
+    bottom: 0vh;
+    left: 0%;
+    width: 100%;
+    height: 53vh;
+    background-color: rgba(0,0,0,0.5);
+}
+
+

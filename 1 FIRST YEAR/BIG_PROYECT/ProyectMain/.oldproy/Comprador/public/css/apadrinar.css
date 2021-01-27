@@ -1,0 +1,29 @@
+article{
+    text-align: center;
+    margin-top: 50px;
+   
+}
+
+.gran{
+    background-color: pink;
+    width: 500px;
+    height: 20%;
+    border-radius: 15px;
+    float: left;
+    box-shadow: 4px 4px rgb(236, 113, 133);
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+
+img{
+    margin: 10px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50px;
+    
+}
+
+span{
+    margin: 5px;
+}

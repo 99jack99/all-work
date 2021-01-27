@@ -1,0 +1,105 @@
+#god{
+    margin-top: -20px;
+    width: 100%;
+    height: 100vh;
+    background-color: #6197ba;
+    position:absolute;
+    align-content: center;
+}
+
+.titulo{
+    margin-top: 50px;
+    margin-left: 200px;
+    width: 250px;
+    height: 40px;
+    background-color: #cecece;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 7px 7px 7px palevioletred;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+.Container{
+    border-radius: 40px;
+    align-items: center;
+    position: relative;
+    margin: 40px;
+
+    background-color: #cecece ;
+    width: 30%;
+   height: 60%;
+   box-shadow: 7px 7px 7px palevioletred;
+   
+}
+
+
+form > p{
+    padding: 20px;
+    margin-left: 30px;
+    
+ 
+}
+
+label{
+    font-family: "Baloo Bhai";
+    text-shadow: 3px 3px 3px grey;
+    
+}
+
+input{
+  border: none;
+  border-radius: 10px;
+  border-bottom-style: solid; 
+  margin-left: 20px;
+  height: 25px;
+  text-align: center;
+  font-family: 'Montserrat', cursive;
+}
+
+
+
+.boton1{
+    background-color: #32ff7e;
+    border-radius: 5px;
+    width: 100px;
+    height: auto;
+    font-family: 'Baloo Bhai', cursive;
+    text-align: center;
+    box-shadow: 2px 2px 2px black;
+    transition: 2s;
+    font-size: 1.1em;
+}
+
+.boton1:hover{
+    box-shadow: 1px 1px 1px white;
+    transition: 1s;
+    cursor: pointer;
+    width:200px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+.boton2:hover{
+    box-shadow: 1px 1px 1px white;
+    transition: 1s;
+    cursor: pointer;
+    width:200px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+.boton2{
+    text-align: center;
+    background-color: #ff3838;
+    border-radius: 5px;
+    width: 100px;
+    height: auto;
+    font-family: 'Baloo Bhai', cursive;
+    box-shadow: 2px 2px 2px black;
+    font-size: 1.1em;
+    transition: 2s;
+}
+
+form > div{
+    margin: 20px;
+}

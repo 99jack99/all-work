@@ -1,0 +1,139 @@
+
+#aside-perfilA
+{
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 30%;
+    padding: 20px 30x;
+    border-radius: 20px;
+    box-shadow: 4px 4px 17px;
+    float: left;
+}
+#aside-perfilB
+{
+    margin-top: 30px;
+    width: 30%;
+    padding: 20px 30x;
+    border-radius: 20px;
+    border: 60px;
+    box-shadow: 4px 4px 17px;
+    margin-right: 15px;
+    margin-left: 15px;
+    float: left;
+}
+#aside-perfilC
+{
+    margin-top: 30px;
+    width: 30%;
+    padding: 20px 30x;
+    border-radius: 20px;
+    box-shadow: 4px 4px 17px;
+    float: left;
+}
+#img-perfil{
+    border-radius: 40px;
+    margin: 5px;
+}
+#img-perfil-add {
+    border-radius: 30px;
+    margin: 5px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+#outer-info{
+
+}
+#butt-perfil{
+
+}
+#butt-perfil-men{
+    margin-top: 10px:
+
+}
+#butt-perfil-add{
+    margin-left: -925px;
+    margin-top: 115px;
+}
+#titulo{
+
+}
+#aside-animal {
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 30%;
+    padding: 20px 30x;
+    border-radius: 20px;
+    box-shadow: 4px 4px 17px;
+    float: left;
+}
+.textoinp{
+    margin-left: 20px;
+    margin-top: -900px;
+}
+.check{
+    margin-top: 7px;
+}
+.ajuste{
+    margin-left: 145px;
+    margin-top: -55px;
+    margin-bottom: 65px;
+}
+.p-perfil{
+margin-left: 15px;
+}
+.butt-perfil{
+
+}
+
+.per-butt {
+    display: block;
+    width: 150px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ee6e73;
+    color: white;
+    font-size: 1.5em;
+    margin: 10px auto;
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+.subir:hover {
+    color: #fff;
+    background: #f7cb15;
+}
+
+#formulario{
+    margin-left: 450px;
+    margin-top: -450px;
+    margin-right: 150px;
+}
+
+
+#list {
+  margin: 0 15%;
+  padding-top: 10vh;
+}
+
+.list-item {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.list-item:hover>.pedir {
+  color: lime;
+}
+
+.info,
+.img-wrapper {
+  display: inline-block;
+}
+
+.info {
+  width: 80%;
+  padding: 0 15px;
+}

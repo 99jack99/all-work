@@ -1,0 +1,157 @@
+
+/* FONDO DE TODO */
+#godContainer {
+
+    height: 100%;
+    width: 100%;
+   background-color:rgb(0, 30, 129);
+   
+    
+}
+
+/* TITULO */
+
+#tituloSup{
+
+text-align: center;
+color: white;
+font-family: 'Baloo Bhai', cursive;
+width: 300px;
+text-align: center;
+border-radius: 30px;
+
+}
+
+
+
+
+/* 1º DIV SUPERIOR */
+
+.SupDiv{
+display: block;
+position: absolute;
+height: max-content;
+width: 100%;
+text-align: center;
+background: rgb(219,184,199);
+background: radial-gradient(circle, rgba(219,184,199,1) 0%, rgba(15,73,143,1) 100%);
+font-family: 'Montserrat', cursive;
+}
+
+.boxes {
+    display: inline-block;
+    border-radius: 5px;
+    margin:20px;
+    position: relative;
+    width: 190px;
+    height: 300px;
+    background: #1eafed;
+    box-shadow: 10px 10px 20px black;
+   transition: 0.5s;
+   color: #1eafed;
+
+}
+.text{
+    margin-left: 40px;
+    overflow: hidden;
+    margin-right: 40px;
+}
+
+.boxes h2{
+    color: beige;
+}
+
+
+
+.boxes:hover{
+    border-radius: 7px;
+    margin: 3px;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: black;
+    box-shadow: 10px 10px 20px rgb(219,184,199);
+    transition: 0.5s;
+}
+
+
+.animalAnimation {
+    border-bottom-left-radius: 600px ;
+    border-bottom-right-radius: 600px;
+    height: 300px;
+    width: 100%;
+    background: rgb(219,184,199);
+    background: radial-gradient(circle, rgba(219,184,199,1) 0%, rgba(15,73,143,1) 100%);
+    text-align: center;
+    margin-top: 340px;
+}
+
+
+.animalAnimation > div{
+    padding: 100px;
+    height: 50px;
+    width: 100%;
+}
+
+
+p{
+    font-family: 'Montserrat', cursive;
+    font-size: 1.3em;
+}
+
+
+
+/* PRUEBA --------------------------------------------------------------------- */
+
+
+.foticos{
+  width: 750px;
+  height: 550px;
+}
+
+#slideshow { 
+  margin: 50px; 
+  margin-left: 450px;
+  position: relative; 
+  width: 770px; 
+  height: 580px; 
+  padding: 10px; 
+  box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+#slideshow > div { 
+  position: absolute; 
+  top: 10px; 
+  left: 10px; 
+  right: 10px; 
+  bottom: 10px; 
+}
+
+.imaa{
+    text-align: center;
+    width: 180px;
+    height: 290px;
+}
+
+.fotoIn{
+    position: absolute;
+    border-radius: 10px;
+    height: 135px;
+    width: 135px;
+    margin-right: 500px;
+    box-shadow: -30px 30px 10px black;
+    transition: 1.5s;
+}
+
+.imaa  .fotoIn:hover{
+    position: absolute;
+    border-radius: 10px;
+    height: 135px;
+    width: 135px;
+    margin-right: 500px;
+    box-shadow: -30px 30px 10px black;
+    margin-top: 10px;
+    opacity: 0;
+    transition: 1.5s;
+    
+}

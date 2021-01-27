@@ -1,0 +1,63 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+div{
+    height: 620px;
+    width: 100%;
+    background-color: rgb(28, 150, 150);
+}
+
+button{
+    margin:40px;
+    height: 200px;
+    width: 1250px;
+    border-bottom-style: double;
+    box-shadow: 3px 5px black;
+    transition: 2s;
+    background-color: rgb(116, 240, 116);
+    border-style: none;
+    color:black;
+
+}
+
+button:hover{
+transition: 3s;
+box-shadow: 0px 0px goldenrod;
+background-color: black;
+color:white;
+cursor: pointer;
+}
+
+
+footer{
+    background-color: wheat;
+    text-align: center;
+}
+
+li{
+    list-style: none;
+}
+
+
+img{
+    margin-top: 10px;
+    height: 48px;
+    width: 48px;
+    border-radius: 25px;
+}
+
+p{
+    background-color: blueviolet;
+}
+
+.formaLabel{
+    width: 200px;
+  }
+
+  .formato{
+    margin-top: 20px;
+  }

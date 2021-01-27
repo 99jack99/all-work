@@ -1,0 +1,43 @@
+.fa-bell
+{
+    color:red;
+    text-shadow: 1px 1px 1px black;
+}
+
+#notif-body
+{
+    background-color: #ffa2a6;
+    position: fixed;
+    right: 0;
+    height: 27%;
+    width: 20%;
+    font-size: 1.3em;
+    padding-left: 70px;
+    border-radius: 10px 0 10px 10pc;
+}
+
+
+.notif-item
+{
+    margin-top: 15px;
+}
+
+.fa-check
+{
+    color:green;
+}
+
+.fa-plus
+{
+    color:blue;
+}
+
+.fa-times
+{
+    color:red;
+}
+
+#cont
+{
+    position: absolute;
+}

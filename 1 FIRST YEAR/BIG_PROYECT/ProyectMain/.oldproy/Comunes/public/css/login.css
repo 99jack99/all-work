@@ -1,0 +1,40 @@
+#formulario-login
+{
+    background-color: transparent;
+    border: solid #EF6C6C 5px;
+    border-radius: 3px;
+    width: 45%;
+    margin: 0 30%;
+    margin-top: 17%;
+    position: relative;
+    box-shadow: 4px 4px 17px;
+}
+#imagen-login
+{
+    position: absolute;
+    left: 45%;
+    top: 15%;
+}
+#user-span
+{
+    color: #EF6C6C;
+    font-size: 80px;
+    position: absolute;
+    left: 50%;
+    margin-bottom: 15px;
+    top: 20%;
+    font-family: monospace;
+}
+
+#passU
+{
+    position: relative;
+    left: 22%;
+    top: 5vh;
+    font-size: 2em;
+}
+
+body
+{
+    background-color: white;
+}

@@ -1,0 +1,395 @@
+body
+{
+  height: 100vh;
+  overflow: hidden;
+}
+
+#barra-info
+{
+    position: absolute;
+    left: 0;
+}
+
+#barra-fav
+{
+    position: absolute;
+    right: 0;
+    top: 10%;
+}
+
+.barras
+{
+    background-image: linear-gradient(#18a2dd, #6197ba);
+    height: 90vh;
+    width: 20%;
+}
+
+#buscador-wrapper
+{
+    position: relative;
+    width: 45%;
+    height: 80vh;
+    display: inline-block;
+    left: 28%;
+    box-shadow: 1px 9px 21px grey;
+    top: 4vh;
+    border-radius:15px;
+}
+
+#imagen-fig
+{
+    position: absolute;
+    height: 63vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#imagen-img
+{
+    width: 100%;
+}
+
+#acciones-wrapper
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 17vh;
+    background-color: rgba(206,206,206,0.2);
+}
+
+.accion
+{
+    top: 0vh;
+    font-size: 6em;
+    position: relative;
+    padding: 3%;
+    text-shadow: 3px 3px 6px grey;
+    border-radius: 15px;
+    left: 26%;
+    transition: all 0.2s ease-in-out;
+}
+
+.accion:hover
+{
+    top: -2vh;
+    text-shadow: 6px 6px 6px grey;
+    cursor: pointer;
+}
+
+.fa-times-circle
+{
+    padding: 3% 2%;
+    color: #df1d42;
+}
+
+.fa-paw
+{   
+    color:#22eaca;
+    padding: 3% 0.5%;
+}
+
+.fa-star
+{
+    color:#fdd043;
+}
+
+#nope
+{
+    left: 18%;
+}
+
+#like
+{
+    left: 43%;
+}
+
+#popup-like
+{
+    opacity: 0;
+    display: none;
+    width: 33%;
+    text-align: center;
+    height: 46vh;
+    background-color: #eef2f5;
+    border-radius: 20px;
+    position: fixed;
+    left: 33%;
+    top: 15vh;
+    box-shadow: 9px 4px 15px rgba(0,0,0,0.2);
+    border: solid #1eafed 2px;
+    transition: all 0.4s ease-in-out;
+    z-index: 100;
+    padding: 2% 2%;
+    overflow: hidden;
+}
+
+#cancel-popup-like
+{
+    position: absolute;
+    left: 6%;
+    bottom: 3vh;
+    font-size: 2em;
+    color: white;
+    background-color: #df1d42;
+    padding: 1%;
+    border-radius: 10px;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#cancel-popup-like:hover
+{
+    cursor: pointer;
+    background-color: #d64b64;  
+}
+
+#confirm-popup-like
+{
+    position: absolute;
+    right: 6%;
+    bottom: 3vh;
+    font-size: 2em;
+    color: white;
+    background-color: #62e6d0;
+    padding: 1%;
+    border-radius: 10px;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#confirm-popup-like:hover
+{
+    cursor: pointer;
+    background-color: #75eeda;  
+}
+
+#modal-like
+{
+    opacity: 0;
+    display: none;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 50;
+    position: fixed;
+    top: 0;    
+}
+
+#fav
+{
+    top: -2vh;
+    left: 70%;
+    font-size: 1.5em;
+    position: absolute;
+    font-family: 'Baloo Bhai', cursive;
+    color:#999;
+}
+
+#fav:hover
+{
+    color:#fdd043;
+}
+
+.active-fav
+{
+    color:#fdd043!important;
+}
+
+#tooltip
+{
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    color: white;
+    position: relative;
+    bottom: 6vh;
+    right: -20%;
+}
+
+#fav:hover #tooltip
+{
+    opacity: 1;
+}
+
+
+
+#titulo-info
+{
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 2.5vw;
+    color: white;
+    position: absolute;
+    left: 35%;
+    top: 2vh;
+}
+
+#info-inner
+{
+    position: absolute;
+    top: 10vh;
+    left: 7%;
+    background-color: white;
+    height: 67vh;
+    width: 85%;
+    border-radius: 16px;
+    padding: 5vh 10%;
+}
+
+
+label
+{
+    font-family: 'Baloo Bhai', cursive;
+    color: #3f5f74;
+    font-weight: 800;
+}
+
+.info-main
+{
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 2.4vw;
+}
+
+.info-second
+{
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 8%;
+}
+
+#titulo-fav
+{
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 2.5vw;
+    color: white;
+    position: absolute;
+    left: 18%;
+}
+
+#fav-inner
+{
+    position: absolute;
+    top: 8vh;
+    left: 3%;
+    height: 80vh;
+    width: 94%;
+    text-align: center;
+}
+
+.fav-item
+{
+    height: 10vh;
+    position: relative;
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.fav-fig
+{
+    background-color: rgba(206,206,206,0.6);
+    height: 8vh;
+    width: 20.5%;
+    top: 1vh;
+    left: 4%;
+    position: relative;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.fav-img
+{
+    position: absolute;
+    height: 76px;
+    left: -30%;
+}
+
+.fav-nombre
+{
+    font-size: 1.3vw;
+    position: absolute;
+    left: 28%;
+    top: 3.5vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.elim-fav
+{
+    font-size: 2vw;
+    position: absolute;
+    right: 5%;
+    bottom: 2.5vh;
+    color: #dc4763;
+}
+
+.elim-fav:hover
+{
+    color: #db6f83;
+    cursor: pointer;
+}
+
+#fav-message
+{
+    position: relative;
+    font-size: 2em;
+    color: white;
+    font-family: 'Baloo Bhai', cursive;
+    top: 2vh;
+}
+
+#mensaje-like
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+}
+
+#like-popup-fav
+{
+    color:#fdd043;
+    font-weight: bold;
+}
+
+#like-popup-fav:hover
+{
+    cursor: pointer;
+    color:#fcc217;
+}
+
+@media(max-width: 1750px)
+{
+    #fav
+    {
+    top: -2vh;
+    left: 65%;
+    font-size: 1.5em;
+    position: absolute;
+    font-family: 'Baloo Bhai', cursive;
+    color:#999;
+    }
+
+    #info-desc {
+        font-size: 1vw;
+        
+    }
+
+    .info-second
+    {
+        font-weight: bold;
+    }
+
+    .info-main 
+    {
+        font-size: 1.5vw;
+    }
+
+    #info-inner
+    {
+        height: 77vh;
+    }
+
+    #popup-like
+    {
+        height: 60vh;
+    }
+
+
+}

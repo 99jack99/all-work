@@ -1,0 +1,124 @@
+#WALL{
+    background-color: black;
+    color: white;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+hr{
+    background-color: white;
+}
+
+
+.navbar{
+    background-color: black;
+   
+}
+
+#NAVBOX a{
+    color: white;
+}
+
+
+.imgTipos{
+    height:500px;
+    width: 100%;
+    z-index: -1;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.infocard{
+    background-color: black;
+}
+
+.card h1{
+    font-style: italic;
+}
+
+section p {
+    font-size: 25px;
+} 
+
+button{
+    font-size: 25px;
+    background-color: #f5deb3;
+    
+}
+
+button p{
+    color: wheat;
+}
+
+.loco{
+    background-color: wheat;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.loco:hover{
+    transition: 1s;
+    border-radius: 30px;
+    background-color: #663399;
+}
+
+.nav-link{
+    transition: 2s;
+}
+
+.nav-link:hover{
+    transition: 1.5s;
+    background-color: rebeccapurple;
+    border-radius: 10px;
+}
+
+
+#logo{
+    transition: 1.5s;
+}
+
+
+#logo:hover{
+    transition: 1.5s;
+    background-color: rebeccapurple;
+    border-radius: 50%;
+}
+
+form{
+    margin-bottom: 30px;
+}
+
+.accordion button{
+    color: black;
+    
+}
+
+
+section *{
+    font-size: 25px;
+} 
+
+.accordion .card *{
+    font-size: 25px;
+}
+
+.card-body{
+    color: black;
+}
+
+
+
+.locura .row .card h2 {
+    color: black;
+}
+
+
+
+
+  
+ 
+  
+
+ 

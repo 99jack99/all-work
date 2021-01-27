@@ -1,0 +1,76 @@
+{% extends "layout.html.twig" %}
+{% block contenido %}
+
+{% if (resultado|length) == 0 %}
+	<div class="container mt-5"> <h2 class="text-center">NO HAY RESULTADOS</h2></div>
+{% endif %}
+
+{% if (resultado|length) > 0 %}
+		<section>
+	<div class="container mt-5"> <h2 class="text-center">RESULTADOS DE LA BÚSQUEDA</h2>
+	<div class="row mt-2">
+	
+{% for item in resultado %}
+{% set counter = ( counter | default(0) ) + 1 %}
+{% set targ = "exampleModal_" ~ counter %}
+				<div class="col-md-4">
+					<div class="card mb-3 text-center">
+						<div class="card-body text-center">
+							
+								<h3 class="card-title">{{item.getTitulo()}}</h3>
+							{% set nombre= item.getAlumnoxpis()[0].getAlumnoId().getNombre() %}
+							{% set apellidos= item.getAlumnoxpis()[0].getAlumnoId().getApellidos() %}
+							
+							<h3 class="card-subtitle mb-2 text-muted">{{nombre}} {{apellidos}}</h3>
+							<p class="card-text">{{item.getDescripcion()}}</p>
+
+							<button type="button" class="btn" data-toggle="modal" data-target={{"#" ~ targ }}>
+								Más Info
+							</button>
+
+							<!-- Modal -->
+							<div class="modal fade" id="{{ targ }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h3 class="modal-title" id="exampleModalLabel">{{item.getTitulo()}}</h3>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<img class="imagen-popup" src="img/logo.png" alt="" srcset="">
+											<p>
+												<b>Curso Escolar</b>: {{item.getCursoEscolar()}}</p><br>
+											<p>
+												<b>
+													Profesor responsable</b>: {{item.getProf().getNombre()}}</p><br>
+											<p>
+												<b>Titulacion</b>: {{item.getTitulacion().getNombre()}}</p><br>
+											<p>
+												<b>
+													Privacidad</b>: CopyRight</p><br>
+											<p>
+												<b>Resumen</b>: {{item.getDescripcion()}}</p>
+										</div>
+										{% set counter = counter + 1 %}
+										<div class="modal-footer">
+											<button type="submit" class="btn btn-lg float-right" id="btnLogin">Visualizar</button>
+											<button type="submit" class="btn btn-lg float-right" id="btnLogin">Descargar</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+	{% endfor %}
+
+
+</div>
+</div>
+	</section>
+{% endif %}
+{% endblock %}
+

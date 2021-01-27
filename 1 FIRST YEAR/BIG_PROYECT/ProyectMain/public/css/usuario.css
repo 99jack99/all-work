@@ -1,0 +1,252 @@
+
+article
+{
+    height: 100vh;
+    margin-top:5vh;
+}
+
+section
+{
+    background-color: #6197ba;
+    width: 34%;
+    height: 41vh;
+    margin: 0 auto;
+    padding: 2% 1%;
+    position: relative;
+}
+
+#section-imagen
+{
+    padding: 2% 6%;
+    border-radius: 2% 2% 0 0;
+}
+
+#fondo
+{
+    position: absolute;
+    z-index: -1;
+    opacity: 0.1;
+    transform: rotate(120deg);
+    left: -19%;
+}
+
+#fondo img
+{
+    height: 80vh;
+}
+
+#foto-perfil
+{
+    background-color: lightgrey;
+    border-radius: 100%;
+    height: 36vh;
+    position: relative;
+    width: 80%;
+    left: 10%;
+}
+
+#foto-img
+{
+    position: absolute;
+    left: 10%;
+    top: 9vh;
+}
+
+#section-datos
+{
+    padding: 2% 5%;
+    height: 75vh;
+}
+
+label
+{
+    display: block;
+    color: #243744;
+    font-weight: 800;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+input
+{
+    display:block;
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.5s ease-in-out;
+}
+
+.writable
+{
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    color: black;
+}
+
+input:read-only { 
+    border:none;
+    background-color: transparent;
+    color:white;
+  }
+
+
+#submit-butt
+  {
+
+        display: none;
+        opacity: 0;
+        border: none;
+        font-family: 'Montserrat',cursive;
+        padding: 1% 2%;
+        position: absolute;
+        left: 23%;
+        bottom: 23vh;
+        border-radius: 16px;
+        transition: all 0.4s ease-in-out
+  }
+  
+#submit-butt:hover
+  {
+      cursor: pointer;
+      background-color: rgb(0, 190, 63);
+      color: white;
+  }
+
+
+#edit-butt
+{
+    position: absolute;
+    right: -28%;
+    top: -0.5vh;
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+
+#edit-butt:hover
+{
+    color: #cecece;
+    cursor: pointer;
+}
+
+.fa-edit
+{
+    position: absolute;
+    right: 1%;
+    top: 0vh;
+    font-size: 1.5em;
+    color: white;
+}
+
+#elim-cuenta,#cerrar-sesion
+{
+    color: white;    
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    border-radius: 9px;
+    padding: 10px 23%;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+#elim-cuenta:hover
+{
+    background-color: #eb6780;
+    cursor: pointer;
+}
+
+#cerrar-sesion:hover
+{
+    background-color: #1eafed;
+    cursor: pointer;
+}
+
+#cerrar-sesion
+{
+    bottom: 30vh;
+    background-color:#3f5f74;
+}
+
+#elim-cuenta
+{
+    bottom:15vh;
+    background-color: #df1d42;
+}
+
+#modal-user
+{
+    display: none;
+    opacity: 0;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.4);
+    top: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+#popup-user
+{
+    display: none;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    width: 40%;
+    height: 45vh;
+    position: fixed;
+    background-color: white;
+    z-index: 101;
+    left: 30%;
+    top: 30vh;
+    border-radius: 15px;
+    padding: 3%;
+    text-align: center;
+}
+
+#confirm-button
+{
+    position: absolute;
+    right: 6%;
+    bottom: 3vh;
+    font-size: 2em;
+    color: white;
+    background-color: #df1d42;
+    padding: 1%;
+    border-radius: 10px;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#confirm-button:hover
+{
+    cursor: pointer;
+    background-color: #d64b64;
+}
+
+#cancel-button
+{
+    position: absolute;
+    left: 6%;
+    bottom: 3vh;
+    font-size: 2em;
+    color: white;
+    background-color: #6197ba;
+    padding: 1%;
+    border-radius: 10px;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#cancel-button:hover
+{
+    cursor: pointer;
+    background-color: #1eafed;
+}
+
+#mensaje-delete
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+}
