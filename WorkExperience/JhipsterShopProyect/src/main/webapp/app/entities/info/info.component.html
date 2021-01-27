@@ -1,0 +1,75 @@
+<div>
+    <h2 id="page-heading">
+        <span>Infos</span>
+
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-info" [routerLink]="['/info/new']">
+            <fa-icon icon="plus"></fa-icon>
+            <span>
+            Create a new Info
+            </span>
+        </button>
+    </h2>
+
+    <jhi-alert-error></jhi-alert-error>
+
+    <jhi-alert></jhi-alert>
+
+    <div class="alert alert-warning" id="no-result" *ngIf="infos?.length === 0">
+        <span>No infos found</span>
+    </div>
+
+    <div class="table-responsive" id="entities" *ngIf="infos && infos.length > 0">
+        <table class="table table-striped" aria-describedby="page-heading">
+            <thead>
+                <tr>
+                    <th scope="col" ><span>ID</span></th>
+                    <th scope="col" ><span>Cantidad Stock</span></th>
+                    <th scope="col" ><span>Talla</span></th>
+                    <th scope="col" ><span>Articulo</span></th>
+                    <th scope="col" ><span>Colores</span></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let info of infos ;trackBy: trackId">
+                    <td><a [routerLink]="['/info', info.id, 'view']">{{ info.id }}</a></td>
+                    <td>{{ info.cantidadStock }}</td>
+                    <td>{{ info.talla }}</td>
+                    <td>
+                        <div *ngIf="info.articuloId">
+                            <a [routerLink]="['/articulo', info.articuloId , 'view']" >{{ info.articuloNombre }}</a>
+                        </div>
+                    </td>
+                    <td>
+                        <div *ngIf="info.coloresId">
+                            <a [routerLink]="['/colores', info.coloresId , 'view']" >{{ info.coloresNombreColor }}</a>
+                        </div>
+                    </td>
+                    <td class="text-right">
+                        <div class="btn-group">
+                            <button type="submit"
+                                    [routerLink]="['/info', info.id, 'view']"
+                                    class="btn btn-info btn-sm">
+                                <fa-icon icon="eye"></fa-icon>
+                                <span class="d-none d-md-inline">View</span>
+                            </button>
+
+                            <button type="submit"
+                                    [routerLink]="['/info', info.id, 'edit']"
+                                    class="btn btn-primary btn-sm">
+                                <fa-icon icon="pencil-alt"></fa-icon>
+                                <span class="d-none d-md-inline">Edit</span>
+                            </button>
+
+                            <button type="submit" (click)="delete(info)"
+                                    class="btn btn-danger btn-sm">
+                                <fa-icon icon="times"></fa-icon>
+                                <span class="d-none d-md-inline">Delete</span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

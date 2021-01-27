@@ -1,0 +1,46 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="info">
+            <h2><span>Info</span> {{ info.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span>Cantidad Stock</span></dt>
+                <dd>
+                    <span>{{ info.cantidadStock }}</span>
+                </dd>
+                <dt><span>Talla</span></dt>
+                <dd>
+                    <span>{{ info.talla }}</span>
+                </dd>
+                <dt><span>Articulo</span></dt>
+                <dd>
+                    <div *ngIf="info.articuloId">
+                        <a [routerLink]="['/articulo', info.articuloId, 'view']">{{ info.articuloNombre }}</a>
+                    </div>
+                </dd>
+                <dt><span>Colores</span></dt>
+                <dd>
+                    <div *ngIf="info.coloresId">
+                        <a [routerLink]="['/colores', info.coloresId, 'view']">{{ info.coloresNombreColor }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span>Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/info', info.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span>Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

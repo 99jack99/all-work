@@ -1,0 +1,41 @@
+@import '../../../scss/index.scss';
+
+
+#home{
+    .carousel__Horizontal{
+        margin: 0 3px;
+    }
+
+    .category{
+        background-color: $bg-primary;
+    
+        .menu-category {
+            padding: 80px 0;
+            text-align: center;
+
+            h1{
+                font-size: 40px;
+            }
+            
+            .nav-item{
+                display: inline-block;
+        
+                .nav-link {
+                    color: $primary-color;
+                    font-weight: 700;
+        
+                    &:hover{
+                       color:$secondary-color; 
+                    }
+                }
+        
+                .active{
+                    color: $secondary-color;
+                    position: relative;
+                    border-bottom: 2px solid $secondary-color;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,44 @@
+<section *ngIf="product" id="product-view" class="container">
+
+            <app-breadcrumbs [product]="product"></app-breadcrumbs>
+
+    <div class="row">
+        <div class="col-lg-7 col-md-12 col-sm-12">
+            <div *ngIf="product.stock === 0" class="stock">
+                <span>Fuera de stock</span>
+            </div>
+            <div class="image-viewer">
+                <img src="{{product.url}}" alt="{{product.name}}">
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-12 col-sm-12">
+            <div class="sidebar product-detail">
+                <div class="heading-product-detail">
+                   <div class="product-category">
+                        <span>{{product.category.description}}</span>
+                    </div>
+                    <app-star [rate]="product.rate"></app-star>
+                </div>           
+                <div class="product-name">
+                    <h1>{{product.name | uppercase}}</h1>
+                </div>
+                <div class="product-price">
+                    <app-price [price]="product.price"></app-price>
+                    <span *ngIf="product.stock === 0"> (Fuera de Stock)</span>
+                </div>
+                <div class="product-color">
+                    <app-color [color]="product.color" [url]="product.url"></app-color>
+                </div>
+                <div class="product-size">
+                    <app-size [sizes]="product.size"></app-size>
+                </div>
+                <div class="product-white-list">
+                    <app-white-list [favorite]="product.favorite"></app-white-list>
+                </div>
+                <div class="product-rrss">
+                    <app-rrss></app-rrss>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

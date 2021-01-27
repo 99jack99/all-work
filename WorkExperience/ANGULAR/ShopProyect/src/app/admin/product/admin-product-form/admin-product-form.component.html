@@ -1,0 +1,99 @@
+<section id="admin_product_form">
+    <div class="container-fluid">
+        <header>
+            <div class="title">
+                <h1>FICHA DE PRODUCTO &nbsp;<i class="fas fa-tshirt"></i></h1>
+            </div>
+        </header>
+
+        <div class="alert alert-danger" role="alert" *ngIf="error">
+            {{mensaje}}
+        </div>
+        <div class="alert alert-success" role="alert" *ngIf="success">
+            {{mensaje}}
+        </div>
+
+        <main>
+            <form name="productForm" role="form" #editForm="ngForm" novalidate autocomplete="off">
+                <div class="row" *ngIf="!modoAlta">
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <label for="id">ID</label>
+                            <input type="text" class="form-control" id="id" [(ngModel)]="product.id" name="id" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" class="form-control" id="name" [(ngModel)]="product.name" name="name" maxlength="100" required>
+                            <div [hidden]="!(editForm.controls.name?.dirty && editForm.controls.name?.invalid)">
+                                <small class="form-text text-danger"
+                                [hidden]="editForm.controls.name?.errors?.required">
+                                Este campo es requerido
+                                </small>
+                                <small class="form-text text-danger"
+                                [hidden]="editForm.controls.name?.errors?.maxlength">
+                                Este campo no puede superar los 100 caracteres
+                                </small>
+                            </div>
+                        </div>       
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <label for="precio">Precio</label>
+                            <input type="text" class="form-control" id="precio" [(ngModel)]="product.price"
+                                name="precio">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <label for="stock">Stock</label>
+                            <input type="text" class="form-control" id="stock" [(ngModel)]="product.stock"
+                                name="stock">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <label for="color">Color</label>
+                            <input type="text" class="form-control" id="color" [(ngModel)]="product.color" name="color">
+                        </div>
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="url">Url</label>
+                            <input type="text" class="form-control" id="url" [(ngModel)]="product.url" name="url">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="genero">Genero</label>
+                            <select class="form-control" name="genero" [(ngModel)]="product.gender">
+                                <option value="Hombre">Hombre</option>
+                                <option value="Mujer">Mujer</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="categoria">Categoria</label>
+                            <select class="form-control" name="categoria" [(ngModel)]="product.category">
+                                <option [ngValue]="category" *ngFor="let category of categories">{{category.description}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div> 
+            </form>
+        </main>
+        <footer class="botonera">
+            <a routerLink="/admin/product-list">
+                <button type="button" id="btnVolver" class="btn btn-secondary">Volver</button>
+            </a>
+            <button [disabled]="editForm.form.invalid" id="btnGuardar" class="btn btn-primary" (click)="guardar()">Guardar</button>
+        </footer>
+    </div>
+</section>

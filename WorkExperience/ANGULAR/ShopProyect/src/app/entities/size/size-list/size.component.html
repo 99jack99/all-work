@@ -1,0 +1,7 @@
+<p>Elige tu talla</p>
+<div class="size-container" *ngFor="let size of sizes">
+    <button *ngIf="size.available" class="btn-size not__available" type="button" disabled><span>{{size.description}}</span></button>
+    <button *ngIf="!size.available" class="btn-size" type="button" ><span>{{size.description}}</span></button>
+</div>
+
+

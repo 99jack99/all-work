@@ -1,0 +1,19 @@
+<a *ngIf="product" class="card" [routerLink]="['/shop/product/view', product.id]">
+    <div class="card-img-top">
+        <button class="fav" type="button">
+            <span [outerHTML]="product.favorite | favorite"></span>
+        </button>
+        <img src="{{product.url}}" alt="{{product.name}}">
+    </div>
+    <div class="card-detail">
+        <div class="card-detail-top">
+            <div class="card-datail-category">
+                {{product.category.description}}
+            </div>
+        </div>
+        <div class="card-detail-middle">
+            <span>{{product.name}}</span> <br>
+            <app-price [price]="product.price"></app-price>
+        </div>
+    </div>
+</a>

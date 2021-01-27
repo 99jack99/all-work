@@ -1,0 +1,39 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="banner">
+            <h2><span>Banner</span> {{ banner.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span>Nombre</span></dt>
+                <dd>
+                    <span>{{ banner.nombre }}</span>
+                </dd>
+                <dt><span>Image</span></dt>
+                <dd>
+                    <div *ngIf="banner.image">
+                        <a (click)="openFile(banner.imageContentType, banner.image)">
+                            <img [src]="'data:' + banner.imageContentType + ';base64,' + banner.image" style="max-width: 100%;" alt="banner image"/>
+                        </a>
+                        {{ banner.imageContentType }}, {{ byteSize(banner.image) }}
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span>Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/banner', banner.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span>Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

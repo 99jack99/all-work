@@ -1,0 +1,197 @@
+/* FUENTES */
+/* COLORES */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #c060a1;
+  font-family: "Dosis", sans-serif;
+  /*conta*/
+}
+body nav {
+  display: block;
+  font-weight: 700;
+}
+body nav .superiornav {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+body nav .superiornav a {
+  text-decoration: none;
+  font-style: italic;
+}
+body nav .superiornav div input {
+  border-radius: 10px;
+  border: 2px solid black;
+  text-align: end;
+  padding: 5px;
+}
+body nav .inferiornav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: black;
+  box-shadow: 5px 10px 18px black;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+}
+body nav .inferiornav #logo {
+  display: block;
+  position: relative;
+  margin-top: 10px;
+  padding: 10px;
+}
+body nav .inferiornav #logo a {
+  text-decoration: none;
+}
+body nav .inferiornav #logo a h1 {
+  color: white;
+  margin: 0;
+}
+body nav .inferiornav .pags ul li {
+  text-decoration: none;
+  display: inline;
+  margin: 0 10px;
+}
+body nav .inferiornav .pags ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3em;
+}
+body section {
+  padding: 20px;
+  /*home*/
+  /*price*/
+  /*portf*/
+}
+body section h2 {
+  text-align: center;
+}
+body section .innercontent {
+  display: flex;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+}
+body section .innercontent div {
+  width: 25%;
+  height: 250px;
+  transform: none;
+  border: 2px solid black;
+  padding: 5px;
+  transition: 1s;
+}
+body section .innercontent div img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+body section .innercontent div:hover {
+  width: 24%;
+  height: 240px;
+  border: 5px solid black;
+  border-radius: 10px;
+  padding: 0;
+  transition: 0.5s;
+}
+body section .pricelist {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+body section .pricelist .priceitems {
+  padding: 10px;
+  margin: 20px;
+  width: 25%;
+  box-shadow: 5px 10px 18px #b61b94;
+  text-align: center;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  transition: 0.5s;
+}
+body section .pricelist .priceitems #uno {
+  background-color: #caa472;
+}
+body section .pricelist .priceitems #dos {
+  background-color: #CD7F32;
+}
+body section .pricelist .priceitems #tres {
+  background-color: #D3D3D3;
+}
+body section .pricelist .priceitems #cuatro {
+  background-color: #FFDF00;
+}
+body section .pricelist .priceitems h3 {
+  border-radius: 10px;
+  padding: 5px;
+  background-color: blue;
+}
+body section .pricelist .priceitems p {
+  font-style: italic;
+}
+body section .pricelist .priceitems:hover {
+  padding: 5px;
+  box-shadow: 5px 10px 18px black;
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+  border-radius: 20px;
+  transition: 1s;
+}
+body section .portfoliolist {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+body section .portfoliolist .portfolioitems {
+  padding: 5px;
+  margin: 20px;
+  width: 20%;
+  box-shadow: 5px 10px 18px #f1d4d4;
+  text-align: center;
+  border: 1px solid black;
+}
+body section .portfoliolist .portfolioitems:hover {
+  margin: 10px;
+  width: 20%;
+  box-shadow: 5px 10px 18px black;
+  text-align: center;
+  border: 3px solid black;
+}
+body .superiorcont {
+  padding: 10px;
+  margin: 20px;
+}
+body .mainform {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+body .mainform input[type=submit] {
+  background-color: black;
+  border: 1px solid white;
+  color: #c060a1;
+}
+body footer {
+  display: block;
+}
+body footer .footersup {
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #f1d4d4;
+  border-top: 3px solid black;
+}
+body footer .footerinf {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body footer .footerinf img[src^="imgs/rrss"] {
+  width: 40px;
+  margin: 0 5px;
+}
+
+/*# sourceMappingURL=index.css.map */

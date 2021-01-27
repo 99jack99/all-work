@@ -1,0 +1,15 @@
+<div class="card d-flex align-items-center">
+
+    <img [src]="'data:image/jpg;base64,'+articulo.img" class="card-img-top" alt="imagen-producto" [routerLink]='["/catalogo", articulo.id]'>
+    <div class="fav-button text-center" [innerHTML]="articulo.isFav! | favIcon">
+
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">{{articulo.nombre}}</h5>
+        <div class="text-center no-gutter">
+            <label class="price" [ngClass]="{'price-tachado':articulo.precioOferta}">{{articulo.precio | currency:'EUR':true}} </label>
+            <label *ngIf="articulo.precioOferta" class="price-oferta">{{articulo.precioOferta | currency:'EUR':true}}</label>
+        </div>
+
+    </div>
+</div>

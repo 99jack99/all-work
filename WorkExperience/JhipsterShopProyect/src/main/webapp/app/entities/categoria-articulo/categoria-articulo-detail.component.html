@@ -1,0 +1,43 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="categoriaArticulo">
+            <h2><span>Categoria Articulo</span> {{ categoriaArticulo.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span>Nombre Categoria Articulo</span></dt>
+                <dd>
+                    <span>{{ categoriaArticulo.nombreCategoriaArticulo }}</span>
+                </dd>
+                <dt><span>Description Categoria Articulo</span></dt>
+                <dd>
+                    <span>{{ categoriaArticulo.descriptionCategoriaArticulo }}</span>
+                </dd>
+                <dt><span>Logo</span></dt>
+                <dd>
+                    <div *ngIf="categoriaArticulo.logo">
+                        <a (click)="openFile(categoriaArticulo.logoContentType, categoriaArticulo.logo)">
+                            <img [src]="'data:' + categoriaArticulo.logoContentType + ';base64,' + categoriaArticulo.logo" style="max-width: 100%;" alt="categoriaArticulo image"/>
+                        </a>
+                        {{ categoriaArticulo.logoContentType }}, {{ byteSize(categoriaArticulo.logo) }}
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span>Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/categoria-articulo', categoriaArticulo.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span>Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

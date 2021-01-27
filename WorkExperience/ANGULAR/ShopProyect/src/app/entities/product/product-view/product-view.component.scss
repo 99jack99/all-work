@@ -1,0 +1,122 @@
+@import '../../../../scss/index.scss';
+
+.row {
+    .col {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+.breadcrumbs{
+    align-items: center;
+    display: flex;
+    margin: 20px 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+
+    .breadcrumb_item{
+        display: inline-flex;
+        align-items: center;
+
+        .breadcrumb_link{
+            color: #000;
+            text-decoration: underline;
+        }
+
+        .btn-volver{
+            border:0;
+            margin-right:10px;
+            background-color: $bg-primary;
+
+            &:hover{
+                color: $secondary-color;
+            }
+
+            .i {
+                margin-right:10px;
+            }
+            
+        }
+
+        .separator{
+            margin: 0 8px;
+        }
+    }
+}
+
+
+.stock{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top:10px;
+    left: 0px;
+    padding:10px;
+    background-color: $bg-stock;
+
+    &::after{
+        content: '';
+        position: absolute;
+        top:40px;
+        left: 0px;
+        width: 15px;
+        height: 15px;
+        background: linear-gradient(45deg, $bg-primary 50%, $bg-stock 50%);
+    }
+    
+    > span {
+        font-size: 14px;
+        color: white;
+        text-transform: uppercase;
+    }
+} 
+
+.image-viewer{
+    background-color: $bg-secondary;
+    text-align: center;
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.product-detail{
+
+    .heading-product-detail{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+            span {
+                font-size: 16px;
+            }
+    }
+
+    div[class^="product-"]{
+        margin-bottom:5px;
+    }
+
+    .product-name{
+        h1{
+            font-size: 34px;
+            font-style: italic;
+        }
+    }
+
+    .product-size{
+        margin-top: 1em;
+    }
+
+    .product-price{
+        display: flex;
+        justify-content: flex-start;
+
+        span {
+            margin-left: 10px;
+            color: rgb(68, 68, 68);
+            font-weight: bold;
+        }
+
+    }
+
+}

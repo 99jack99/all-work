@@ -1,0 +1,51 @@
+
+entity Articulo {
+	nombre String required,
+    precio Float required,
+    precioOferta Float,
+    isFav Boolean required,
+    img ImageBlob required,
+    rating Integer required min(0) max(5)
+    
+}
+
+entity CategoriaArticulo {
+	nombreCategoriaArticulo String required,
+    descriptionCategoriaArticulo String required,
+    logo ImageBlob required
+}
+
+entity Colores {
+	nombreColor String required,
+    img ImageBlob required
+}
+
+entity Info {
+	cantidadStock Integer required,
+    talla String required
+}
+
+entity Banner {
+nombre String required,
+	image ImageBlob required
+}
+
+relationship OneToMany {
+    CategoriaArticulo{Articulo(nombre)} to Articulo{CategoriaArticulo(nombreCategoriaArticulo)}
+}
+
+relationship ManyToOne{
+	Info{Articulo(nombre)} to Articulo
+    Colores{Articulo(nombre)} to Articulo
+  	Info{Colores(nombreColor)} to Colores
+
+    
+}
+
+
+paginate Articulo with pagination
+paginate CategoriaArticulo with infinite-scroll
+dto * with mapstruct
+service * with serviceImpl
+filter Articulo
+

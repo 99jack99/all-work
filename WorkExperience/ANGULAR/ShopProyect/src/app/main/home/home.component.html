@@ -1,0 +1,21 @@
+<main id="home">
+    <section class="carousel__Vertical">
+        <app-carousel-list [carouselsPrincipal]="carouselsPrincipal" [carouselVertical]='carousel'></app-carousel-list>
+    </section>
+    <section class="carousel__Horizontal">
+        <app-carousel-list [carouselsSecondary]="carouselsSecondary" [carouselHorizontal]='carousel'></app-carousel-list>
+    </section>
+    <section class="category">
+        <article class="menu-category">
+            <h1>¿PARA QUIÉN COMPRAS?</h1>
+            <ul>
+                <li class="nav-item"><a class="nav-link active">Mujer</a></li>
+                <li class="nav-item"><a class="nav-link">Hombre</a></li>
+                <li class="nav-item"><a class="nav-link">Niños</a></li>
+            </ul>
+        </article>
+        <article class="carousel-category">
+            <app-category-list></app-category-list>
+        </article>
+    </section>
+</main>

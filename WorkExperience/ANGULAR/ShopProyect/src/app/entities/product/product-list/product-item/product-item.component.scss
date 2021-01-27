@@ -1,0 +1,40 @@
+@import '../../../../../scss/index.scss';
+
+a.card {
+    width: 100%;
+    @include border-radius(0); 
+
+    .card-img-top{
+        .fav{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border:0;
+            top:10px;
+            right: 10px;
+            width: 40px;
+            height: 40px;
+            background-color: $bg-fav;
+            @include border-radius(50%);
+        }
+    }
+
+    .card-detail{
+        padding:5px;
+
+        .card-detail-top{
+            min-height: 17px;
+
+            .card-datail-category{
+                font-size: 10px;        
+            }
+        }
+        
+        .card-detail-middle{
+            height: 65px;
+            line-height: normal;
+        }
+    }
+}
+

@@ -1,0 +1,46 @@
+{
+  "name": "CategoriaArticulo",
+  "fields": [
+    {
+      "fieldName": "nombreCategoriaArticulo",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "descriptionCategoriaArticulo",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "logo",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image",
+      "fieldValidateRules": [
+        "required"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "articulo",
+      "otherEntityRelationshipName": "categoriaArticulo",
+      "relationshipName": "articulo"
+    }
+  ],
+  "changelogDate": "20201122001840",
+  "entityTableName": "categoria_articulo",
+  "dto": "mapstruct",
+  "pagination": "infinite-scroll",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

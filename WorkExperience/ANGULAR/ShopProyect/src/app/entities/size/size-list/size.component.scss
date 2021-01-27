@@ -1,0 +1,26 @@
+@import '../../../../scss/index.scss';
+
+.size-container{
+    display: inline-block;
+
+    .btn-size{
+        padding: 6px 20px;
+        background-color: $btn-primary;
+        color: $primary-color;
+        border: 1px solid $tertiary-color;
+    
+        &:hover{
+            background-color: $secondary-color;
+            color: black;
+        }
+
+        &:disabled{
+            background-color: rgb(174, 174, 174);
+        }
+    }
+
+    
+    .not__available > span{
+        text-decoration: line-through;
+    }
+}

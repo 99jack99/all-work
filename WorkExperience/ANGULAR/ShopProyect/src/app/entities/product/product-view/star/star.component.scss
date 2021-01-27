@@ -1,0 +1,19 @@
+
+.rating-list li {
+    float: right;
+    color: #ddd;
+    padding: 3px;
+    svg {
+        font-size: 16px;
+    }
+  
+  }
+  
+  li, .rating-list li.selected {
+    color: #000000;
+  }
+  
+  .rating-list {
+    display: inline-block;
+    list-style: none;
+  }

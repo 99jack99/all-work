@@ -1,0 +1,40 @@
+<div class="container d-flex justify-content-center">
+    <div class="row blog">
+        <div class="col-md-12">
+            <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+
+                <ol class="carousel-indicators">
+                    <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#blogCarousel" data-slide-to="1"></li>
+                </ol>
+
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <jhi-carousel-horizontal-item *ngFor="let a of listCatArt | slice:0:5" [catArt]=a>
+                            </jhi-carousel-horizontal-item>
+                        </div>
+                        <!--.row-->
+                    </div>
+                    <!--.item-->
+
+                    <div class="carousel-item">
+
+                        <div class="row">
+                            <jhi-carousel-horizontal-item *ngFor="let a of listCatArt | slice:5" [catArt]=a>
+                            </jhi-carousel-horizontal-item>
+                        </div>
+                        <!--.row-->
+                    </div>
+                    <!--.item-->
+
+                </div>
+                <!--.carousel-inner-->
+            </div>
+            <!--.Carousel-->
+
+        </div>
+    </div>
+</div>

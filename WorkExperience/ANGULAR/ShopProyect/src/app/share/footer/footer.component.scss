@@ -1,0 +1,52 @@
+@import '../../../scss/index';
+
+
+    
+
+#footer-content-principal.container-fluid {
+    margin-top:20px;
+    background-color: rgb(235, 235, 235);
+
+    .content-wrapper{
+        padding: 40px 0;
+
+        .row{
+            .col-md-3{
+                ul{
+                    li{
+                        h5{
+                            font-weight: bold;
+                            color: rgb(99, 99, 99);
+                        }
+                        a{
+                            cursor: pointer;
+                            font-size: 13px;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+#footer-content-secondary{
+    padding: 30px 0;
+    background-color: rgb(58, 58, 58);
+    .copyright-rrss{
+        display: flex;
+        justify-content: space-between;
+    
+        .copyright span{
+            color: rgb(179, 179, 179);
+            font-size: 12px;
+        }
+    }
+}
+
+
+
+
+@media (min-width: 800px) { 
+}

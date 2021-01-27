@@ -1,0 +1,61 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="articulo">
+            <h2><span>Articulo</span> {{ articulo.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span>Nombre</span></dt>
+                <dd>
+                    <span>{{ articulo.nombre }}</span>
+                </dd>
+                <dt><span>Precio</span></dt>
+                <dd>
+                    <span>{{ articulo.precio }}</span>
+                </dd>
+                <dt><span>Precio Oferta</span></dt>
+                <dd>
+                    <span>{{ articulo.precioOferta }}</span>
+                </dd>
+                <dt><span>Is Fav</span></dt>
+                <dd>
+                    <span>{{ articulo.isFav }}</span>
+                </dd>
+                <dt><span>Img</span></dt>
+                <dd>
+                    <div *ngIf="articulo.img">
+                        <a (click)="openFile(articulo.imgContentType, articulo.img)">
+                            <img [src]="'data:' + articulo.imgContentType + ';base64,' + articulo.img" style="max-width: 100%;" alt="articulo image"/>
+                        </a>
+                        {{ articulo.imgContentType }}, {{ byteSize(articulo.img) }}
+                    </div>
+                </dd>
+                <dt><span>Rating</span></dt>
+                <dd>
+                    <span>{{ articulo.rating }}</span>
+                </dd>
+                <dt><span>Categoria Articulo</span></dt>
+                <dd>
+                    <div *ngIf="articulo.categoriaArticuloId">
+                        <a [routerLink]="['/categoria-articulo', articulo.categoriaArticuloId, 'view']">{{ articulo.categoriaArticuloNombreCategoriaArticulo }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span>Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/articulo', articulo.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span>Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

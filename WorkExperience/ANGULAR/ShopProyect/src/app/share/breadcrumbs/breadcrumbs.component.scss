@@ -1,0 +1,41 @@
+@import '../../../scss/index.scss';
+
+.breadcrumbs{
+    align-items: center;
+    display: flex;
+    margin: 20px 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+
+    .breadcrumb_item{
+        display: inline-flex;
+        align-items: center;
+
+        .breadcrumb_link{
+            color: #000;
+            text-decoration: underline;
+        }
+
+        .btn-volver{
+            border:0;
+            margin-right:10px;
+            background-color: $btn-secondary;
+            color: white;
+            padding: 5px 10px;
+
+            &:hover{
+                background-color: $secondary-color;
+                color: $btn-secondary;
+            }
+
+            svg {
+                margin-right:10px;
+            }
+            
+        }
+
+        .separator{
+            margin: 0 8px;
+        }
+    }
+}

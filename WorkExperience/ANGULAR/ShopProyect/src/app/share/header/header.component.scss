@@ -1,0 +1,43 @@
+@import '../../../scss/index';
+
+
+nav.top-header{
+    display: flex;
+    justify-content: space-around;
+    background-color: $bg-primary;
+    align-items: center;
+    height: 70px;
+    position:-webkit-sticky; 
+    position:sticky; 
+    top:0;
+    z-index: 10;
+    
+    .nav-item{
+        display: inline-block;
+
+        .nav-link {
+            color: $primary-color;
+            font-weight: 700;
+
+            &:hover{
+               color:$secondary-color; 
+            }
+        }
+
+        .active{
+            color: $secondary-color;
+            position: relative;
+            border-bottom: 2px solid $secondary-color;
+        }
+    }
+}
+
+@media (max-width: 675px){
+    
+    nav.top-header{
+        .nav-item.lenguaje{
+            display: none;
+        }
+    }
+}
+

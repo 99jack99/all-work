@@ -1,0 +1,22 @@
+@import '../../../scss/index.scss';
+
+.rrss ul{
+    li{
+        cursor: pointer;
+        display: inline-block;
+        color: rgb(163, 163, 163);
+        padding: 0px 10px;
+
+        &:hover{
+            svg.fa-facebook-f{
+                color: #3b5998;
+            }
+            svg.fa-twitter{
+                color: #00acee;
+            }
+            svg.fa-pinterest{
+                color: #c8232c;
+            }
+        }
+    }
+}

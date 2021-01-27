@@ -1,0 +1,42 @@
+div.card {
+    width: 18rem;
+}
+
+div.fav-button {
+    cursor: pointer;
+    background: white;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    float: left;
+    position: absolute;
+    left: 68%;
+    top: 5%;
+}
+
+img {
+    cursor: pointer;
+    background-color: lightpink;
+    width: 200px;
+    height: 200px;
+    &:hover {
+        background-color: blueviolet;
+    }
+}
+
+.price-tachado {
+    text-decoration: line-through;
+    color: grey
+}
+
+.price-normal {
+    color: black
+}
+
+.price-oferta {
+    color: red;
+}
+
+* {
+    border: none;
+}

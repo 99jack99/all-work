@@ -1,0 +1,32 @@
+{
+  "name": "Banner",
+  "fields": [
+    {
+      "fieldName": "nombre",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "image",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image",
+      "fieldValidateRules": [
+        "required"
+      ]
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20201124074418",
+  "entityTableName": "banner",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

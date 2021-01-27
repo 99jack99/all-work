@@ -1,0 +1,5 @@
+<div class="row">
+    <div *ngFor="let i of [1,1,1,1,1]; let indice= index">
+        <div [innerHTML]=" (rating>=indice+1) | starRating"></div>
+    </div>
+</div>

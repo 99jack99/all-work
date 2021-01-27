@@ -1,0 +1,48 @@
+* {
+    color: black
+}
+
+img.img-principal {
+    height: 400px;
+    width: 400px;
+    background-color: lightpink;
+}
+
+div.out-stock-info {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 2px;
+    padding: 2px;
+    color: white;
+    background-color: grey;
+    float: left;
+    left: 50%;
+    position: absolute;
+    top: 5%;
+}
+
+label.price {
+    font-size: 30px;
+}
+
+.price-outstock {
+    color: grey;
+}
+
+button.button-size {
+    color: black;
+    background: lightgrey;
+    border: 0.5px solid darkgray;
+}
+
+button.out-stock {
+    text-decoration: line-through;
+    color: grey;
+    background: rgba(128, 128, 128, 0.063);
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+img.img-color {
+    width: 50px;
+    height: 50px;
+}

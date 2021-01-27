@@ -1,0 +1,34 @@
+#admin_product_form{
+    background-color: rgb(235, 235, 235);
+    padding: 50px;
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height:100px;
+    }
+    main{
+        padding: 20px 0;
+        background-color: white;
+        border-radius: 10px;
+
+        .ng-valid[required], .ng-valid.required{
+            border-left: 5px solid #42A948;
+        }
+
+        .ng-invalid:not(form){
+            border-left: 5px solid #a94442;
+        }
+
+        #btnGuardar:disabled {
+            background: silver;
+            border: 2px solid silver;
+        }
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+}

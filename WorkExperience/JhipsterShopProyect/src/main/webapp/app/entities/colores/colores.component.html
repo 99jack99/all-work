@@ -1,0 +1,74 @@
+<div>
+    <h2 id="page-heading">
+        <span>Colores</span>
+
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-colores" [routerLink]="['/colores/new']">
+            <fa-icon icon="plus"></fa-icon>
+            <span>
+            Create a new Colores
+            </span>
+        </button>
+    </h2>
+
+    <jhi-alert-error></jhi-alert-error>
+
+    <jhi-alert></jhi-alert>
+
+    <div class="alert alert-warning" id="no-result" *ngIf="colores?.length === 0">
+        <span>No colores found</span>
+    </div>
+
+    <div class="table-responsive" id="entities" *ngIf="colores && colores.length > 0">
+        <table class="table table-striped" aria-describedby="page-heading">
+            <thead>
+                <tr>
+                    <th scope="col" ><span>ID</span></th>
+                    <th scope="col" ><span>Nombre Color</span></th>
+                    <th scope="col" ><span>Img</span></th>
+                    <th scope="col" ><span>Articulo</span></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let colores of colores ;trackBy: trackId">
+                    <td><a [routerLink]="['/colores', colores.id, 'view']">{{ colores.id }}</a></td>
+                    <td>{{ colores.nombreColor }}</td>
+                    <td>
+                        <a *ngIf="colores.img" (click)="openFile(colores.imgContentType, colores.img)">
+                            <img [src]="'data:' + colores.imgContentType + ';base64,' + colores.img" style="max-height: 30px;" alt="colores image"/>
+                        </a>
+                        <span *ngIf="colores.img">{{ colores.imgContentType }}, {{ byteSize(colores.img) }}</span>
+                    </td>
+                    <td>
+                        <div *ngIf="colores.articuloId">
+                            <a [routerLink]="['/articulo', colores.articuloId , 'view']" >{{ colores.articuloNombre }}</a>
+                        </div>
+                    </td>
+                    <td class="text-right">
+                        <div class="btn-group">
+                            <button type="submit"
+                                    [routerLink]="['/colores', colores.id, 'view']"
+                                    class="btn btn-info btn-sm">
+                                <fa-icon icon="eye"></fa-icon>
+                                <span class="d-none d-md-inline">View</span>
+                            </button>
+
+                            <button type="submit"
+                                    [routerLink]="['/colores', colores.id, 'edit']"
+                                    class="btn btn-primary btn-sm">
+                                <fa-icon icon="pencil-alt"></fa-icon>
+                                <span class="d-none d-md-inline">Edit</span>
+                            </button>
+
+                            <button type="submit" (click)="delete(colores)"
+                                    class="btn btn-danger btn-sm">
+                                <fa-icon icon="times"></fa-icon>
+                                <span class="d-none d-md-inline">Delete</span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+{
+  "name": "Info",
+  "fields": [
+    {
+      "fieldName": "cantidadStock",
+      "fieldType": "Integer",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "talla",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "articulo",
+      "otherEntityRelationshipName": "info",
+      "relationshipName": "articulo",
+      "otherEntityField": "nombre"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "colores",
+      "otherEntityRelationshipName": "info",
+      "relationshipName": "colores",
+      "otherEntityField": "nombreColor"
+    }
+  ],
+  "changelogDate": "20201122002040",
+  "entityTableName": "info",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

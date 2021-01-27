@@ -1,0 +1,31 @@
+@import '../../../../../scss/index.scss';
+
+.white-list{
+    margin:20px 0;
+
+    .add-cart{
+        background-color: $btn-secondary;
+        color: white;
+        padding: 10px;
+        margin-right:10px;
+    
+        svg {
+            margin-left:20px;
+        }
+
+        &:hover{
+            background-color: $secondary-color;
+            color: rgb(0, 0, 0);
+        }
+    }
+    
+    .add-fav{
+        background-color: $btn-primary;
+        color: black;
+        padding: 10px;
+
+        &:hover{
+            color: $secondary-color;
+        }
+    }
+}

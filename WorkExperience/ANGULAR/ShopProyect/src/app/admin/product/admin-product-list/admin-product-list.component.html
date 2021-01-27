@@ -1,0 +1,51 @@
+<section id="admin_product_list">
+    <div class="container-fluid">
+        <header>
+            <div class="title">
+                <h1>LISTA DE PRODUCTOS &nbsp;<i class="far fa-list-alt"></i></h1>
+            </div>
+            <div class="action_add">
+                <a routerLink="/admin/product-form">
+                    <button type="button" class="btn btn-primary">Nuevo producto &nbsp;<i
+                            class="fas fa-plus"></i></button>
+                </a>
+            </div>
+        </header>
+        <main>
+            <table>
+                <thead>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Color</th>
+                    <th>Rate</th>
+                    <th>Categoria</th>
+                    <th>Genero</th>
+                    <th>Stock</th>
+                    <th>Acciones</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let product of products">
+                        <td>{{product.id}}</td>
+                        <td>{{product.name}}</td>
+                        <td>{{product.price | currency:'EUR':'symbol':'1.2-2':'es'}}</td>
+                        <td>{{product.color}}</td>
+                        <td>{{product.rate}}</td>
+                        <td>{{product.category.description}}</td>
+                        <td>{{product.gender}}</td>
+                        <td>{{product.stock}}</td>
+                        <td>
+                            <a [routerLink]="['/admin/product-form', product.id]">
+                                <button id="btnEditar" class="btn btn-secondary"><i class="fas fa-pen"></i></button>
+                            </a>
+                            <button id="btnEliminar" class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+</section>

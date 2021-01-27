@@ -1,0 +1,28 @@
+@import '../../../../scss/index.scss';
+
+.row {
+
+    .col-md-12 {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .col-md-3{
+        padding-left:2px;
+        padding-right:2px;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+
+.header-wrapper{
+    margin-top: 30px;
+    
+    .header-container{
+        display: inline-flex;
+        justify-content: flex-start;
+    }
+}
